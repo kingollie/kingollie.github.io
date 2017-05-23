@@ -22,8 +22,9 @@ WELCOME-CONTENTBACKGROUND IMAGE
 *******************/
 
 #welcome-content {
-  background: url('Images/black-rose.png')no-repeat top center;
+  background: url('Images/you-are-wherever.jpeg')no-repeat top center;
   background-size:cover;
+  background-position: fixed;
   height:1000px;
 }
 
@@ -43,14 +44,31 @@ NAVIGATION TITLE
 
 #header .navigation-title {
     width: 49%;
+    float:left;
 }
 #header .navigation-title h1 {
     font-size: 48px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #d3d3d3;
+    text-shadow: 2px 2px #5d5d5d;
     float: left;
     margin-left: 15%;
+}
+
+#header .circle-face i {
+  background-image: url(Images/circle_port.png);
+  background-size:70px;
+  background-repeat:no-repeat;
+  background-position: center;
+  color:#d3d3d3;
+  padding:20px;
+
+}
+
+#header .circle-face i:hover {
+  opacity: 0.2;
+  cursor: pointer;
 }
 
 /******************
@@ -88,7 +106,8 @@ STYLING OF NAV LINKS
   }
   #header .navigation-links .hover-nav a {
       padding: 10px 0;
-      color: rgba(255, 255, 255, 0.5);
+      color: #d3d3d3;
+      text-shadow: 2px 2px #5d5d5d;
       position: relative;
       text-decoration: none;
       display: inline-block;
@@ -126,16 +145,39 @@ WELCOME MESSAGE
 
 #welcome-message h1 {
   font-size: 48px;
-  color: floralwhite;
+  color: #d3d3d3;
   text-shadow: 2px 2px #5d5d5d;
   font-family: 'Raleway', serif;
 }
 
 #welcome-message i {
   color:#d3d3d3;
+  text-align:center;
+}
+
+#welcome-message i:nth-last-child(2){
+  padding-right:5px;
 }
 
 
+
+/*******************
+ABOUT ME
+********************/
+#about-me.container {
+  height:500px;
+  text-align:center;
+}
+
+#about-me .colhalf {
+  width:49%;
+  float:left;
+}
+
+#about-me .colhalf last {
+  width:49%;
+  float:right;
+}
 
 /******************
 BUTTONS
