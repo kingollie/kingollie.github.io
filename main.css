@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    height:2000px;
+    height: 2000px;
 }
 .container {
     margin: 0 auto;
@@ -22,10 +22,10 @@ WELCOME-CONTENTBACKGROUND IMAGE
 *******************/
 
 #welcome-content {
-  background: url('Images/you-are-wherever.jpeg')no-repeat top center;
-  background-size:cover;
-  background-position: fixed;
-  height:1000px;
+    background: url('Images/you-are-wherever.jpeg')no-repeat top center;
+    background-size: cover;
+    background-position: fixed;
+    height: 1000px;
 }
 
 /******************
@@ -35,7 +35,8 @@ HEADER
 #header {
     height: 125px;
     width: 100%;
-    background-color:transparent;;
+    background-color: transparent;
+    ;
 }
 
 /******************
@@ -43,8 +44,8 @@ NAVIGATION TITLE
 *******************/
 
 #header .navigation-title {
-    width: 49%;
-    float:left;
+    width: 40%;
+    float: left;
 }
 #header .navigation-title h1 {
     font-size: 48px;
@@ -52,23 +53,27 @@ NAVIGATION TITLE
     text-transform: uppercase;
     color: #d3d3d3;
     text-shadow: 2px 2px #5d5d5d;
-    float: left;
-    margin-left: 15%;
+    float: right;
 }
-
+@media screen and (max-width: 1300px) {
+    /* applies only if the screen is narrower than 500px */
+    #header .navigation-title h1 {
+        font-size: 36px;
+    }
+}
+#header .circle-face {}
 #header .circle-face i {
-  background-image: url(Images/circle_port.png);
-  background-size:70px;
-  background-repeat:no-repeat;
-  background-position: center;
-  color:#d3d3d3;
-  padding:20px;
-
+    background-image: url(Images/circle_port.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #d3d3d3;
+    padding: 20px;
+    float: right;
 }
-
 #header .circle-face i:hover {
-  opacity: 0.2;
-  cursor: pointer;
+    opacity: 0.2;
+    cursor: pointer;
 }
 
 /******************
@@ -85,103 +90,110 @@ NAVIGATION LINKS
 STYLING OF NAV LINKS
 *******************/
 
-  #header .navigation-links .hover-nav {
-      font-family: 'Raleway', Arial, sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 1px;
-  }
-  #header .navigation-links .hover-nav * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transition: all 0.35s ease;
-      transition: all 0.35s ease;
-  }
-  #header .navigation-links .hover-nav li {
-      display: inline-block;
-      list-style: outside none none;
-      margin: 30px;
-      padding: 0;
-  }
-  #header .navigation-links .hover-nav a {
-      padding: 10px 0;
-      color: #d3d3d3;
-      text-shadow: 2px 2px #5d5d5d;
-      position: relative;
-      text-decoration: none;
-      display: inline-block;
-  }
-  #header .navigation-links .hover-nav a:before {
-      position: absolute;
-      content: '';
-      -webkit-transition: all 0.35s ease;
-      transition: all 0.35s ease;
-      opacity: 0;
-      top: 25%;
-      bottom: 25%;
-      left: 0;
-      right: 0;
-      border-top: 3px solid #d3d3d3;
-      border-bottom: 3px solid #d3d3d3;
-  }
-  #header .navigation-links .hover-nav a:hover, #header .navigation-links .hover-nav .current a {
-      color: #ffffff;
-  }
-  #header .navigation-links .hover-nav a:hover:before, #header .navigation-links .hover-nav .current a:before {
-      opacity: 1;
-      top: 0;
-      bottom: 0;
-  }
+#header .navigation-links .hover-nav {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#header .navigation-links .hover-nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+#header .navigation-links .hover-nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 30px;
+    padding: 0;
+}
+#header .navigation-links .hover-nav a {
+    padding: 10px 0;
+    color: #d3d3d3;
+    text-shadow: 2px 2px #5d5d5d;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+#header .navigation-links .hover-nav a:before {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    border-top: 3px solid #d3d3d3;
+    border-bottom: 3px solid #d3d3d3;
+}
+#header .navigation-links .hover-nav a:hover, #header .navigation-links .hover-nav .current a {
+    color: #ffffff;
+}
+#header .navigation-links .hover-nav a:hover:before, #header .navigation-links .hover-nav .current a:before {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
 
 /******************
 WELCOME MESSAGE
 *******************/
 
 #welcome-message {
-  text-align: center;
-  padding:10% 25%;
+    text-align: center;
+    padding: 10% 25%;
 }
-
 #welcome-message h1 {
-  font-size: 48px;
-  color: #d3d3d3;
-  text-shadow: 2px 2px #5d5d5d;
-  font-family: 'Raleway', serif;
+    font-size: 48px;
+    color: #d3d3d3;
+    text-shadow: 2px 2px #5d5d5d;
+    font-family: 'Raleway', serif;
 }
-
 #welcome-message i {
-  color:#d3d3d3;
-  text-align:center;
+    color: #d3d3d3;
+    text-align: center;
 }
-
-#welcome-message i:nth-last-child(2){
-  padding-right:5px;
+#welcome-message i:nth-last-child(2) {
+    padding-right: 5px;
 }
-
-
 
 /*******************
 ABOUT ME
 ********************/
+
+#about-me h1 {
+    color: #5d5d5d;
+    font-size: 42px;
+}
 #about-me.container {
-  height:500px;
-  text-align:center;
+    height: 100%;
+    text-align: center;
+    padding: 5%;
+    background: url('Images/topography.png')repeat;
 }
-
+#about-me .about-header h1 {
+    border-top: 5px solid #d3d3d3;
+    padding: 5%;
+    text-align: center;
+}
 #about-me .colhalf {
-  width:49%;
-  float:left;
+    width: 49%;
+    float: left;
 }
-
 #about-me .colhalf last {
-  width:49%;
-  float:right;
+    width: 29%;
+    float: right;
 }
 
 /******************
 BUTTONS
 *******************/
+
+
 /***** out for now sista
 
 .white-button {
@@ -225,19 +237,19 @@ button.white-button {
     position: relative;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    border:1px solid #fff
+    border: 1px solid #fff
 }
 button.white-button span {
     display: inline-block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0.8;
-    color:#d3d3d3;
+    color: #d3d3d3;
 }
 button.white-button i {
     font-size: 22px;
     right: 11px;
-    top:11px;
+    top: 11px;
     position: absolute;
     opacity: 0;
     -webkit-transition: all 0.3s;
@@ -277,15 +289,15 @@ button.white-button:active:before {
     background: rgba(255, 255, 255, 0.3);
 }
 
+/******************
+
+*******************/
 
 
 /******************
 
 *******************/
 
-/******************
-
-*******************/
 
 /******************
 
