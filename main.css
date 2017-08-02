@@ -7,14 +7,22 @@ MAIN PAGE ELEMENTS
 
 *******************/
 
+html {
+
+}
+
 body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    height: 2000px;
+    height: 100%;
+    background: url('Images/topography.png')repeat;
 }
 .container {
     margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding: 2%;
 }
 
 /******************
@@ -165,19 +173,25 @@ WELCOME MESSAGE
 ABOUT ME
 ********************/
 
+
+
 #about-me h1 {
     color: #5d5d5d;
-    font-size: 42px;
+    font-size: 46px;
+}
+
+#about-me h2 {
+  color:#f47d01;
+  font-size:42px
 }
 #about-me.container {
-    height: 100%;
-    text-align: center;
-    padding: 5%;
-    background: url('Images/topography.png')repeat;
+  height:1000px;
 }
+
+
+
 #about-me .about-header h1 {
-    border-top: 5px solid #d3d3d3;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 #about-me .colhalf {
@@ -185,9 +199,23 @@ ABOUT ME
     float: left;
 }
 #about-me .colhalf last {
-    width: 29%;
+    width: 49%;
     float: right;
 }
+
+/******************
+MY WORK
+*******************/
+
+#my-work.container {
+  background-color:#6d6d6d;
+  height:500px;
+}
+
+
+
+
+
 
 /******************
 BUTTONS
