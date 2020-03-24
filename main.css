@@ -16,7 +16,15 @@ body {
     padding: 0;
     font-family: 'Raleway', sans-serif;
     height: 100%;
-    background: url('Images/topography.png')repeat;
+    background-color: #fff;
+
+    background: url('Images/nice-leaf-dog.jpeg')center center no-repeat fixed;
+    background-size:cover;
+
+    height:100%;
+    min-height:100%;
+
+
 }
 .container {
     margin: 0 auto;
@@ -25,15 +33,17 @@ body {
     padding: 2%;
 }
 
+
 /******************
 WELCOME-CONTENTBACKGROUND IMAGE
 *******************/
 
-#welcome-content {
-    background: url('Images/you-are-wherever.jpeg')no-repeat top center;
-    background-size: cover;
-    background-position: fixed;
-    height: 1000px;
+/*#welcome-content {
+    background: url('Images/you-are-wherever.jpeg')center center no-repeat fixed;
+    background-size:cover;
+
+    height:100%;
+    min-height:100%;
 }
 
 /******************
@@ -59,7 +69,7 @@ NAVIGATION TITLE
     font-size: 48px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #d3d3d3;
+    color: #d5d5d5;
     text-shadow: 2px 2px #5d5d5d;
     float: right;
 }
@@ -75,7 +85,7 @@ NAVIGATION TITLE
     background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
-    color: #d3d3d3;
+    color: #d5d5d5;
     padding: 20px;
     float: right;
 }
@@ -119,7 +129,7 @@ STYLING OF NAV LINKS
 }
 #header .navigation-links .hover-nav a {
     padding: 10px 0;
-    color: #d3d3d3;
+    color: #d5d5d5;
     text-shadow: 2px 2px #5d5d5d;
     position: relative;
     text-decoration: none;
@@ -135,8 +145,8 @@ STYLING OF NAV LINKS
     bottom: 25%;
     left: 0;
     right: 0;
-    border-top: 3px solid #d3d3d3;
-    border-bottom: 3px solid #d3d3d3;
+    border-top: 3px solid #d5d5d5;
+    border-bottom: 3px solid #d5d5d5;
 }
 #header .navigation-links .hover-nav a:hover, #header .navigation-links .hover-nav .current a {
     color: #ffffff;
@@ -146,6 +156,14 @@ STYLING OF NAV LINKS
     top: 0;
     bottom: 0;
 }
+
+.navigation-links .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+
 
 /******************
 WELCOME MESSAGE
@@ -157,65 +175,112 @@ WELCOME MESSAGE
 }
 #welcome-message h1 {
     font-size: 48px;
-    color: #d3d3d3;
+    color: #d5d5d5;
     text-shadow: 2px 2px #5d5d5d;
     font-family: 'Raleway', serif;
 }
 #welcome-message i {
-    color: #d3d3d3;
+    color: #d5d5d5;
     text-align: center;
 }
 #welcome-message i:nth-last-child(2) {
     padding-right: 5px;
 }
 
+
 /*******************
-ABOUT ME
+ABOUT ME -- CONTENT
 ********************/
-
-
 
 #about-me h1 {
     color: #5d5d5d;
     font-size: 46px;
 }
 
+#about-me h1 img {
+  margin-bottom:-8px;
+}
+
 #about-me h2 {
   color:#f47d01;
   font-size:42px
 }
+
 #about-me.container {
-  height:1000px;
+  background-color:#d5d5d5;
+
 }
 
+#about-me .content {
+  height:100%;
+  width: 80%;
+  padding: 0 10%;
+}
 
+#about-me .content img {
+  max-width:25%;
+  max-height:25%;
+}
 
-#about-me .about-header h1 {
-    padding: 2%;
-    text-align: center;
+#about-me .content p {
+  padding:0 12%;
+  font-size:18px;
+  letter-spacing: 2px;
+
 }
-#about-me .colhalf {
-    width: 49%;
-    float: left;
-}
-#about-me .colhalf last {
-    width: 49%;
-    float: right;
-}
+
 
 /******************
 MY WORK
 *******************/
 
 #my-work.container {
-  background-color:#6d6d6d;
+  background-color:#d5d5d5;
   height:500px;
+
 }
 
+#my-work .content {
+  height:100%;
+  width: 80%;
+  padding: 0 10%;
 
+}
 
+#my-work .content h1 {
+  color: #5d5d5d;
+  font-size: 46px;
+}
 
+#my-work .content h1 img {
+  margin-bottom:-16px;
+}
 
+/******************
+HOBBIES
+*******************/
+
+#hobbies.container {
+  background-color:#d5d5d5;
+}
+
+#hobbies .content {
+  height: 100%;
+  width:80%;
+  padding:0 10%;
+}
+
+#hobbies .content h1 {
+  color: #5d5d5d;
+  font-size: 46px;
+}
+
+#hobbies .content p {
+  padding:0 12%;
+  font-size:18px;
+  letter-spacing: 2px;
+
+}
 
 /******************
 BUTTONS
@@ -272,7 +337,7 @@ button.white-button span {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0.8;
-    color: #d3d3d3;
+    color: #d5d5d5;
 }
 button.white-button i {
     font-size: 22px;
@@ -318,14 +383,49 @@ button.white-button:active:before {
 }
 
 /******************
-
+SOCIAL MEDIA ICONS
 *******************/
 
+.social-media {
+    text-align:center;
+    padding: 5em;
 
+}
+
+.social-media i {
+    padding: 5%;
+    color:#fff;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+  /* ...and now for the proper property */
+    transition:.5s;
+}
+
+/* Color changes on hover */
+
+.social-media .fa-twitter-square:hover {
+    color:#55acee;
+}
+
+.social-media .fa-linkedin:hover {
+    color:#0077B5;
+}
+
+.social-media .fa-envelope-square:hover {
+    color:#DC4E41;
+}
+
+.social-media .fa-instagram:hover {
+    color:#833AB4;
+}
 /******************
-
+FOOTER
 *******************/
-
+.footer p {
+  color:#fff;
+}
 
 /******************
 
