@@ -187,6 +187,20 @@ WELCOME MESSAGE
     padding-right: 5px;
 }
 
+#welcome-message .circle-face {}
+#welcome-message .circle-face i {
+    background-image: url(Images/new-port.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #d5d5d5;
+}
+#welcome-message .circle-face i:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+
 
 /*******************
 ABOUT ME -- CONTENT
