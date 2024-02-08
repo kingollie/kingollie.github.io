@@ -1,12 +1,6 @@
 /******************
 MAIN PAGE ELEMENTS
 *******************/
-
-
-/******************
-
-*******************/
-
 html {
 
 }
@@ -31,19 +25,6 @@ body {
     height: 100%;
     text-align: center;
     padding: 2%;
-}
-
-
-/******************
-WELCOME-CONTENTBACKGROUND IMAGE
-*******************/
-
-/*#welcome-content {
-    background: url('Images/you-are-wherever.jpeg')center center no-repeat fixed;
-    background-size:cover;
-
-    height:100%;
-    min-height:100%;
 }
 
 /******************
@@ -163,8 +144,6 @@ STYLING OF NAV LINKS
   transition: max-height .2s ease-out;
 }
 
-
-
 /******************
 WELCOME MESSAGE
 *******************/
@@ -199,8 +178,6 @@ WELCOME MESSAGE
     opacity: 0.2;
     cursor: pointer;
 }
-
-
 
 /*******************
 ABOUT ME -- CONTENT
@@ -242,7 +219,6 @@ ABOUT ME -- CONTENT
   letter-spacing: 2px;
 
 }
-
 
 /******************
 MY WORK
@@ -299,33 +275,6 @@ HOBBIES
 /******************
 BUTTONS
 *******************/
-
-
-/***** out for now sista
-
-.white-button {
-    color: #fff;
-    background-color: #e74c3c;
-    width: 200px;
-    height: 50px;
-    padding: 0 20px;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 50px;
-    border-radius: 2px;
-    border: 1px solid #e74c3c;
-    margin: 20px;
-    cursor:pointer;
-}
-.white-button:hover {
-    color: #e74c3c;
-    background-color: #fff;
-    transition: all .2s ease-in;
-}
-
-****/
 
 button.white-button {
     font-family: 'Raleway', Arial, sans-serif;
@@ -440,12 +389,3 @@ FOOTER
 .footer p {
   color:#fff;
 }
-
-/******************
-
-*******************/
-
-
-/******************
-
-*******************/
