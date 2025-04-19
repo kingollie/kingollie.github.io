@@ -1,58 +1,81 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Dillon Frolek | Welcome </title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display:400,400i,700|Raleway:300i,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="Font/font-awesome-4.6.3/css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillon Frolek | Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54ad0f181e.js"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="Images/catattack.ico" />
-    <script src="https://kit.fontawesome.com/54ad0f181e.js"></script>
-
-
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="#welcome-message">Home</a>
+                <a href="#about-me">About</a>
+                <a href="#contact">Connect</a>
+            </div>
         </div>
-        <div id="welcome-message" class="container">
-            <h1>Hi there!<br /> </h1>
-            <a class="circle-face" href="#contact-me"><i class="fa fa-circle-thin fa-5x"></i></a><br/>
-              <h1>My Name is Dillon Frolek <br/>
-              It is nice to meet you :)</h1>
-        </div>
+    </nav>
 
+    <div id="welcome-message" class="container">
+        <h1>Hi there!</h1>
+        <div class="profile-image">
+            <img src="Images/new-port.png" alt="Dillon Frolek">
+        </div>
+        <h2>I'm Dillon Frolek</h2>
+        <p class="subtitle">Software Developer, Nature Enthusiast, and Life Explorer</p>
     </div>
-
 
     <div id="about-me" class="container">
         <div class="content">
-            <h1><img src="Images/color-cat.png"> About Me</h1>
-              <p>As a dedicated professional immersed in the ever-evolving realm of Software Product Development and Management, I balance my career with a rich and fulfilling personal life. Recently married, I've embarked on a lifelong journey with my partner, sharing our love not just with each other but also with our diverse and lively family of pets — four cats, two dogs, and our six aquariums, each a miniature ecosystem teeming with life.</p>
-              <p>In the IT realm, I specialize in software analysis, app integration, and development, with strong skills in IT server management and team leadership. Outside work, my passion for organic gardening — particularly tomatoes, hot peppers, and cannabis — reflects my commitment to sustainability, blending technology with nature.</p>
-              <p>Beyond my professional and gardening interests, I'm an avid disc golf enthusiast. The game's blend of skill, strategy, and outdoor activity provides a perfect escape and a way to connect with friends and nature. Whether I'm navigating the course with a disc in hand or spending time at home among my pets and aquariums, these moments of leisure and care add a fulfilling balance to my life.</p>
-              <p>Though not heavily active on social media, I value genuine connections. Feel free to reach out via Email or connect with me on LinkedIn, Instagram, and Twitter. Let's share stories, insights, or even a round of disc golf if you're nearby.</p>
-              <p>Embracing life's complexities with Peace and Love.</p>
-            <img src="Images/proper-4.png">
+            <h2>About Me</h2>
+            <p>As a dedicated professional in Software Product Development and Management, I blend my technical expertise with a rich and fulfilling personal life. Recently married, I've embarked on a wonderful journey with my partner, sharing our home with our amazing family of four cats, two dogs, and six thriving aquariums.</p>
+            
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technology</h3>
+                    <p>Software analysis, app integration, and development with a focus on IT infrastructure and team leadership.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Garden & Nature</h3>
+                    <p>Passionate about organic gardening, cultivating everything from tomatoes to cannabis, connecting with nature.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <img src="Images/__Disc.png" alt="Disc Golf" style="width: 2.5rem; height: 2.5rem; margin-bottom: 1.5rem;">
+                    <h3>Disc Golf</h3>
+                    <p>Finding joy in disc golf, where skill and strategy meet the great outdoors.</p>
+                </div>
+            </div>
+
+            <p class="closing-text">Though not heavily active on social media, I value genuine connections. Whether you're interested in technology, gardening, or just want to share stories, I'd love to connect.</p>
         </div>
     </div>
 
-    <div id="social-accounts" class="container">
-      <div class="social-media">
-          <a href="https://www.twitter.com/dfrolek" target="_blank">
-              <i class="fab fa-twitter-square fa-4x"></i></a>
-          <a href="https://ca.linkedin.com/in/dillonfrolek" target="_blank">
-              <i class="fab fa-linkedin fa-4x"></i></a>
-          <a href="mailto:dfrolek@gmail.com" target="_blank">
-              <i class="fas fa-envelope-square fa-4x"></i></a>
-          <a href="https://www.instagram.com/dfrolek/" target="_blank">
-              <i class="fab fa-instagram fa-4x"></i></a>
-
-      </div>
-      <div class="footer">
-			        <p>Designed and Built by &copy; Dillon Frolek.</p>
-			      </div>
-
+    <div id="contact" class="container">
+        <div class="content">
+            <h2>Let's Connect</h2>
+            <div class="social-media">
+                <a href="https://www.twitter.com/dfrolek" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter-square fa-3x"></i></a>
+                <a href="https://ca.linkedin.com/in/dillonfrolek" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="mailto:dfrolek@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/dfrolek/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Peace and Love ✌️</p>
+        </footer>
     </div>
-
-
 </body>
+</html>
