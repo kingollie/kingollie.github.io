@@ -46,7 +46,26 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.nav-logo a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo a:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nav-links {
@@ -456,6 +475,11 @@ body {
     
     .nav-links {
         gap: 2rem;
+    }
+    
+    .logo-img {
+        height: 35px;
+        width: 35px;
     }
     
     .social-media {
