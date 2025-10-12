@@ -522,6 +522,13 @@ body {
     line-height: 1;
 }
 
+.project-logo {
+    height: 60px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+}
+
 /* Interest Icon Styles */
 .interest-icon {
     display: flex;
