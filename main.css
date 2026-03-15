@@ -388,7 +388,7 @@ a {
 
 .ecosystem-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: var(--space-sm);
 }
 
@@ -440,7 +440,12 @@ a {
     border-left: 3px solid var(--accent);
     border-radius: var(--radius);
     padding: var(--space-lg);
+    margin-bottom: var(--space-md);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.project-card-single:last-child {
+    margin-bottom: 0;
 }
 
 .project-card-single .project-icon {
@@ -564,7 +569,7 @@ a {
     }
 
     .ecosystem-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project-feature-header {
