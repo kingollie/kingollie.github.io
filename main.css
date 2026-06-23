@@ -15,9 +15,9 @@
     --text-muted: #7a7a7a;
 
     /* Earthy accent - terracotta */
-    --accent: #c45d3a;
-    --accent-soft: rgba(196, 93, 58, 0.1);
-    --accent-hover: #a84d2f;
+    --accent: #2f6e4f;
+    --accent-soft: rgba(47, 110, 79, 0.1);
+    --accent-hover: #275c41;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -236,18 +236,18 @@ a {
     font-weight: 500;
     border-radius: 50px;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 8px rgba(196, 93, 58, 0.25);
+    box-shadow: 0 2px 8px rgba(47, 110, 79, 0.25);
 }
 
 .cta-button:hover {
     background: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(196, 93, 58, 0.3);
+    box-shadow: 0 4px 16px rgba(47, 110, 79, 0.3);
 }
 
 .cta-button:active {
     transform: translateY(0);
-    box-shadow: 0 1px 4px rgba(196, 93, 58, 0.3);
+    box-shadow: 0 1px 4px rgba(47, 110, 79, 0.3);
 }
 
 /* ===================================
