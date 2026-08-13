@@ -357,16 +357,16 @@ section + section {
     max-width: 56ch;
 }
 
-/* Discin ecosystem */
-.ecosystem {
+/* Grouped app tiles (Discin suite, Sports) */
+.app-grid {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.375rem;
     margin-top: var(--space-md);
 }
 
-.ecosystem a {
+.app-grid a {
     display: block;
     padding: 0.625rem 0.75rem;
     background: var(--bg-subtle);
@@ -374,11 +374,11 @@ section + section {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-.ecosystem a:hover {
+.app-grid a:hover {
     background: var(--accent-soft);
 }
 
-.ecosystem span {
+.app-grid span {
     display: block;
     font-size: 0.9375rem;
     font-weight: 500;
@@ -386,11 +386,11 @@ section + section {
     line-height: 1.4;
 }
 
-.ecosystem a:hover span {
+.app-grid a:hover span {
     color: var(--accent);
 }
 
-.ecosystem small {
+.app-grid small {
     display: block;
     font-size: 0.8125rem;
     color: var(--text-muted);
@@ -534,7 +534,7 @@ section + section {
         gap: 0.125rem;
     }
 
-    .ecosystem {
+    .app-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 

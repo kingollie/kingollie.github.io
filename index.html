@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dillon Frolek is a Business Application Analyst in Edmonton, AB. Builder of the Discin disc golf apps, CoryLog, OilWoods, MatchDay26, and the ChainOut Podcast fantasy game.">
+    <meta name="description" content="Dillon Frolek is a Business Application Analyst in Edmonton, AB, and runs defthat, an AI development consultancy. Builder of the Discin disc golf apps, CoryLog, OilWoods, MatchDay26, and the ChainOut Podcast fantasy game.">
     <meta name="author" content="Dillon Frolek">
     <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#131312" media="(prefers-color-scheme: dark)">
@@ -13,7 +13,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Dillon Frolek | Business Application Analyst in Edmonton, AB">
-    <meta property="og:description" content="SaaS operations by day, disc golf apps at night. Builder of the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
+    <meta property="og:description" content="SaaS operations by day, disc golf apps at night. Runs defthat, an AI development consultancy, and builds the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
     <meta property="og:image" content="https://dillonfrolek.com/Images/dillon-frolek.jpeg">
     <meta property="og:image:alt" content="Portrait of Dillon Frolek">
     <meta property="og:url" content="https://dillonfrolek.com/">
@@ -24,31 +24,46 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@dfrolek">
     <meta name="twitter:title" content="Dillon Frolek | Business Application Analyst in Edmonton, AB">
-    <meta name="twitter:description" content="SaaS operations by day, disc golf apps at night. Builder of the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
+    <meta name="twitter:description" content="SaaS operations by day, disc golf apps at night. Runs defthat, an AI development consultancy, and builds the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
     <meta name="twitter:image" content="https://dillonfrolek.com/Images/dillon-frolek.jpeg">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Dillon Frolek",
-        "jobTitle": "Business Application Analyst",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Edmonton",
-            "addressRegion": "AB",
-            "addressCountry": "CA"
-        },
-        "url": "https://dillonfrolek.com",
-        "image": "https://dillonfrolek.com/Images/dillon-frolek.jpeg",
-        "sameAs": [
-            "https://ca.linkedin.com/in/dillonfrolek",
-            "https://www.twitter.com/dfrolek",
-            "https://discin.app",
-            "https://corylog.online",
-            "https://chainoutpodcast.com",
-            "https://matchday26.xyz"
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://dillonfrolek.com/#dillon",
+                "name": "Dillon Frolek",
+                "jobTitle": "Business Application Analyst",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Edmonton",
+                    "addressRegion": "AB",
+                    "addressCountry": "CA"
+                },
+                "url": "https://dillonfrolek.com",
+                "image": "https://dillonfrolek.com/Images/dillon-frolek.jpeg",
+                "sameAs": [
+                    "https://ca.linkedin.com/in/dillonfrolek",
+                    "https://www.twitter.com/dfrolek",
+                    "https://defthat.app",
+                    "https://discin.app",
+                    "https://corylog.online",
+                    "https://chainoutpodcast.com",
+                    "https://matchday26.xyz"
+                ]
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://defthat.app/#org",
+                "name": "defthat",
+                "description": "AI development consultancy specializing in Claude Code setup, security-first configuration, and ongoing development partnership.",
+                "url": "https://defthat.app",
+                "founder": { "@id": "https://dillonfrolek.com/#dillon" },
+                "areaServed": "Worldwide"
+            }
         ]
     }
     </script>
@@ -70,6 +85,7 @@
             </a>
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#work">Work</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Connect</a>
             </div>
@@ -102,6 +118,18 @@
             </div>
         </section>
 
+        <section id="work" class="container">
+            <h2>Work</h2>
+
+            <article class="project">
+                <div class="project-head">
+                    <h3>defthat</h3>
+                    <a href="https://defthat.app/" target="_blank" rel="noopener" class="project-link">defthat.app</a>
+                </div>
+                <p class="project-desc">My AI development consultancy. I get teams set up with Claude Code — permissions, path-scoped rules, custom commands — then stay on for code review, security audits, and architecture help.</p>
+            </article>
+        </section>
+
         <section id="projects" class="container">
             <h2>What I've Built</h2>
 
@@ -111,7 +139,7 @@
                     <a href="https://discin.app/" target="_blank" rel="noopener" class="project-link">discin.app</a>
                 </div>
                 <p class="project-desc">A suite of disc golf apps, built because I wanted them to exist.</p>
-                <ul class="ecosystem">
+                <ul class="app-grid">
                     <li><a href="https://discin.app/" target="_blank" rel="noopener"><span>Collection</span><small>Track your discs</small></a></li>
                     <li><a href="https://putting.discin.app/" target="_blank" rel="noopener"><span>Putting</span><small>Practice tracker</small></a></li>
                     <li><a href="https://throws.discin.app/" target="_blank" rel="noopener"><span>Throws</span><small>Distance logging</small></a></li>
@@ -124,34 +152,22 @@
 
             <article class="project">
                 <div class="project-head">
+                    <h3>Sports</h3>
+                </div>
+                <p class="project-desc">Season companions for the teams and tournaments I follow.</p>
+                <ul class="app-grid">
+                    <li><a href="https://oilwoods.vercel.app/" target="_blank" rel="noopener"><span>OilWoods</span><small>Oilers dashboard</small></a></li>
+                    <li><a href="https://matchday26.xyz/" target="_blank" rel="noopener"><span>MatchDay26</span><small>2026 World Cup</small></a></li>
+                    <li><a href="https://chainoutpodcast.com/" target="_blank" rel="noopener"><span>ChainOut</span><small>Fantasy pick'em</small></a></li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <div class="project-head">
                     <h3>CoryLog</h3>
                     <a href="https://corylog.online/" target="_blank" rel="noopener" class="project-link">corylog.online</a>
                 </div>
                 <p class="project-desc">Aquarium logbook for tanks, livestock, feeding schedules, and water parameters.</p>
-            </article>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>OilWoods</h3>
-                    <a href="https://oilwoods.vercel.app/" target="_blank" rel="noopener" class="project-link">oilwoods.vercel.app</a>
-                </div>
-                <p class="project-desc">An Edmonton Oilers dashboard for stats, standings, and following the season.</p>
-            </article>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>ChainOut Podcast</h3>
-                    <a href="https://chainoutpodcast.com/" target="_blank" rel="noopener" class="project-link">chainoutpodcast.com</a>
-                </div>
-                <p class="project-desc">Fantasy disc golf pick'em for the podcast community. Built it for friends; now it runs every tournament.</p>
-            </article>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>MatchDay26</h3>
-                    <a href="https://matchday26.xyz/" target="_blank" rel="noopener" class="project-link">matchday26.xyz</a>
-                </div>
-                <p class="project-desc">A companion for the 2026 World Cup: groups, schedule, and the knockout bracket as it fills in.</p>
             </article>
         </section>
 
