@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dillon Frolek is a Business Application Analyst in Edmonton, AB, and runs defthat, an AI development consultancy. Builder of the Discin disc golf apps, CoryLog, OilWoods, MatchDay26, and the ChainOut Podcast fantasy game.">
+    <meta name="description" content="Dillon Frolek lives in Edmonton, Alberta. He looks after SaaS tools at a software company, builds iOS and web apps for problems he actually has, and spends the rest of his time on disc golf, aquariums, peppers, and two shelties.">
     <meta name="author" content="Dillon Frolek">
-    <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#131312" media="(prefers-color-scheme: dark)">
-    <title>Dillon Frolek | Business Application Analyst in Edmonton, AB</title>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e0e0e" media="(prefers-color-scheme: dark)">
+    <title>Dillon Frolek | Edmonton, Alberta</title>
     <link rel="canonical" href="https://dillonfrolek.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Dillon Frolek | Business Application Analyst in Edmonton, AB">
-    <meta property="og:description" content="SaaS operations by day, disc golf apps at night. Runs defthat, an AI development consultancy, and builds the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
+    <meta property="og:title" content="Dillon Frolek">
+    <meta property="og:description" content="Software by day, apps for problems I actually have at night. Mostly about disc golf.">
     <meta property="og:image" content="https://dillonfrolek.com/Images/dillon-frolek.jpeg">
     <meta property="og:image:alt" content="Portrait of Dillon Frolek">
     <meta property="og:url" content="https://dillonfrolek.com/">
@@ -23,8 +23,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@dfrolek">
-    <meta name="twitter:title" content="Dillon Frolek | Business Application Analyst in Edmonton, AB">
-    <meta name="twitter:description" content="SaaS operations by day, disc golf apps at night. Runs defthat, an AI development consultancy, and builds the Discin apps, CoryLog, and the ChainOut Podcast fantasy game.">
+    <meta name="twitter:title" content="Dillon Frolek">
+    <meta name="twitter:description" content="Software by day, apps for problems I actually have at night. Mostly about disc golf.">
     <meta name="twitter:image" content="https://dillonfrolek.com/Images/dillon-frolek.jpeg">
 
     <!-- JSON-LD Structured Data -->
@@ -45,12 +45,13 @@
                 },
                 "url": "https://dillonfrolek.com",
                 "image": "https://dillonfrolek.com/Images/dillon-frolek.jpeg",
+                "knowsAbout": ["iOS development", "Web development", "SaaS operations"],
                 "sameAs": [
                     "https://ca.linkedin.com/in/dillonfrolek",
                     "https://www.twitter.com/dfrolek",
                     "https://defthat.app",
                     "https://discin.app",
-                    "https://corylog.online",
+                    "https://wayfauna.com",
                     "https://chainoutpodcast.com",
                     "https://matchday26.xyz"
                 ]
@@ -59,7 +60,7 @@
                 "@type": "Organization",
                 "@id": "https://defthat.app/#org",
                 "name": "defthat",
-                "description": "AI development consultancy specializing in Claude Code setup, security-first configuration, and ongoing development partnership.",
+                "description": "A small studio that designs and builds iOS apps, web products, and practical AI for organizations, and reviews the systems they already run.",
                 "url": "https://defthat.app",
                 "founder": { "@id": "https://dillonfrolek.com/#dillon" },
                 "areaServed": "Worldwide"
@@ -70,7 +71,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="Images/catattack.ico">
 </head>
@@ -79,127 +80,101 @@
     <a href="#main" class="skip-link">Skip to content</a>
 
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="#top" class="nav-logo" aria-label="Dillon Frolek, back to top">
-                <img src="Images/DF.png" alt="" width="144" height="144" class="logo-img">
-            </a>
+        <div class="wrap nav-content">
+            <a href="#top" class="nav-name">Dillon Frolek</a>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Connect</a>
+                <a href="#built">Built</a>
+                <a href="#contact" class="nav-cta">Say hello</a>
             </div>
         </div>
     </nav>
 
     <main id="main">
-        <section id="top" class="container hero">
-            <div class="profile-image anim">
-                <img src="Images/dillon-frolek.jpeg" alt="Dillon Frolek" width="440" height="660">
-            </div>
-            <p class="hero-greeting anim">Hey, I'm</p>
-            <h1 class="anim">Dillon Frolek</h1>
-            <p class="subtitle anim">Business Application Analyst in Edmonton, Alberta. SaaS operations by day, disc golf apps at night.</p>
-            <p class="anim">
-                <a href="#contact" class="cta-button">
-                    Get in touch
-                    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
-                        <path d="M8 2.5v11M3.5 9.5 8 14l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </p>
-        </section>
-
-        <section id="about" class="container">
-            <h2>About</h2>
-            <div class="prose">
-                <p>I'm a Business Application Analyst at a software company in Edmonton, where I look after 70-odd SaaS tools — the integrations, access, renewals, and the unglamorous work of keeping them all talking to each other.</p>
-                <p>Nights and weekends I build apps for problems I actually have, which is why nearly all of them are about disc golf. Away from a screen: league nights and field work, a couple of planted tanks with shrimp and corydoras, more pepper plants than the garden has room for, and two shelties.</p>
+        <!-- Hero: a short introduction, set large. -->
+        <section id="top" class="wrap hero">
+            <h1 class="display-lg hero-title anim">Hey, I'm Dillon. I build apps for problems I actually have.</h1>
+            <div class="hero-row anim">
+                <img src="Images/dillon-frolek.jpeg" alt="Dillon Frolek" width="440" height="660" class="portrait">
+                <div class="hero-text">
+                    <p class="eyebrow">Edmonton, Alberta</p>
+                    <p class="lead">I look after the software at a company in Edmonton by day. At night it's iOS and web apps, and most of them are about disc golf.</p>
+                </div>
             </div>
         </section>
 
-        <section id="work" class="container">
-            <h2>Work</h2>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>defthat</h3>
-                    <a href="https://defthat.app/" target="_blank" rel="noopener" class="project-link">defthat.app</a>
+        <section id="about" class="wrap section">
+            <div class="split ruled">
+                <h2 class="display-md">About</h2>
+                <div class="prose">
+                    <p>I'm a Business Application Analyst at a software company in Edmonton, where I look after 70-odd SaaS tools: the integrations, access, renewals, and the unglamorous work of keeping them all talking to each other.</p>
+                    <p>Nights and weekends I build iOS and web apps, almost always because I wanted the thing to exist. Away from a screen: league nights and field work, a couple of planted tanks with shrimp and corydoras, more pepper plants than the garden has room for, and two shelties.</p>
                 </div>
-                <p class="project-desc">My AI development consultancy. I get teams set up with Claude Code — permissions, path-scoped rules, custom commands — then stay on for code review, security audits, and architecture help.</p>
-            </article>
+            </div>
         </section>
 
-        <section id="projects" class="container">
-            <h2>What I've Built</h2>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>Discin</h3>
-                    <a href="https://discin.app/" target="_blank" rel="noopener" class="project-link">discin.app</a>
-                </div>
-                <p class="project-desc">A suite of disc golf apps, built because I wanted them to exist.</p>
-                <ul class="app-grid">
-                    <li><a href="https://discin.app/" target="_blank" rel="noopener"><span>Collection</span><small>Track your discs</small></a></li>
-                    <li><a href="https://putting.discin.app/" target="_blank" rel="noopener"><span>Putting</span><small>Practice tracker</small></a></li>
-                    <li><a href="https://throws.discin.app/" target="_blank" rel="noopener"><span>Throws</span><small>Distance logging</small></a></li>
-                    <li><a href="https://maps.discin.app/" target="_blank" rel="noopener"><span>Maps</span><small>Hole designer</small></a></li>
-                    <li><a href="https://flexion.discin.app/" target="_blank" rel="noopener"><span>Flexion</span><small>Stretch routines</small></a></li>
-                    <li><a href="https://discle.discin.app/" target="_blank" rel="noopener"><span>Discle</span><small>Disc golf Wordle</small></a></li>
-                    <li><a href="https://rivals.discin.app/" target="_blank" rel="noopener"><span>Rivals</span><small>Pull &amp; throw game</small></a></li>
+        <section id="built" class="wrap section">
+            <div class="split ruled">
+                <h2 class="display-md">Things I've built</h2>
+                <ul class="builds">
+                    <li>
+                        <div class="build-head">
+                            <h3><a href="https://wayfauna.com/" target="_blank" rel="noopener">Wayfauna</a></h3>
+                            <span class="tag">iOS, coming soon</span>
+                        </div>
+                        <p>A walking game for iPhone that turns everyday walks into nature fieldwork, spotting real Edmonton-area wildlife.</p>
+                    </li>
+                    <li>
+                        <div class="build-head">
+                            <h3><a href="https://discin.app/" target="_blank" rel="noopener">Discin</a></h3>
+                            <span class="tag">iOS + Web</span>
+                        </div>
+                        <p>A suite of disc golf apps, built because I wanted them to exist.</p>
+                        <p class="sub-apps">
+                            <a href="https://discin.app/" target="_blank" rel="noopener">Collection</a> <span class="tag tag-sm">iOS + Web</span>
+                            <a href="https://discle.discin.app/" target="_blank" rel="noopener">Discle</a> <span class="tag tag-sm">iOS + Web</span>
+                            <a href="https://maps.discin.app/" target="_blank" rel="noopener">Maps</a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="build-head">
+                            <h3>Sports</h3>
+                        </div>
+                        <p>Season companions for the teams and tournaments I follow.</p>
+                        <p class="sub-apps">
+                            <a href="https://oilwoods.vercel.app/" target="_blank" rel="noopener">OilWoods</a>
+                            <a href="https://matchday26.xyz/" target="_blank" rel="noopener">MatchDay26</a>
+                            <a href="https://chainoutpodcast.com/" target="_blank" rel="noopener">ChainOut</a>
+                        </p>
+                    </li>
                 </ul>
-            </article>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>Sports</h3>
-                </div>
-                <p class="project-desc">Season companions for the teams and tournaments I follow.</p>
-                <ul class="app-grid">
-                    <li><a href="https://oilwoods.vercel.app/" target="_blank" rel="noopener"><span>OilWoods</span><small>Oilers dashboard</small></a></li>
-                    <li><a href="https://matchday26.xyz/" target="_blank" rel="noopener"><span>MatchDay26</span><small>2026 World Cup</small></a></li>
-                    <li><a href="https://chainoutpodcast.com/" target="_blank" rel="noopener"><span>ChainOut</span><small>Fantasy pick'em</small></a></li>
-                </ul>
-            </article>
-
-            <article class="project">
-                <div class="project-head">
-                    <h3>CoryLog</h3>
-                    <a href="https://corylog.online/" target="_blank" rel="noopener" class="project-link">corylog.online</a>
-                </div>
-                <p class="project-desc">Aquarium logbook for tanks, livestock, feeding schedules, and water parameters.</p>
-            </article>
+            </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2>Connect</h2>
-            <div class="prose">
-                <p>Email is the surest way to reach me.</p>
+        <!-- defthat: part of the story, not the headline. -->
+        <section id="defthat" class="wrap section">
+            <div class="split ruled">
+                <h2 class="display-md">On the side</h2>
+                <div class="prose">
+                    <p>I also run <a href="https://defthat.app/" target="_blank" rel="noopener">defthat</a>, a small studio that builds iOS apps, web products, and practical AI for organizations, and reviews the systems they already run. If you have something like that in mind, that's the place to start.</p>
+                </div>
             </div>
+        </section>
 
+        <section id="contact" class="wrap section">
+            <p class="eyebrow">Email is the surest way to reach me.</p>
+            <a href="mailto:dfrolek@gmail.com" class="big-link">dfrolek@gmail.com</a>
             <ul class="contact-list">
-                <li>
-                    <a href="mailto:dfrolek@gmail.com">
-                        <span>Email</span><small>dfrolek@gmail.com</small>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://ca.linkedin.com/in/dillonfrolek" target="_blank" rel="noopener">
-                        <span>LinkedIn</span><small>/dillonfrolek</small>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/dfrolek" target="_blank" rel="noopener">
-                        <span>X</span><small>@dfrolek</small>
-                    </a>
-                </li>
+                <li><a href="https://ca.linkedin.com/in/dillonfrolek" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://www.twitter.com/dfrolek" target="_blank" rel="noopener">X @dfrolek</a></li>
             </ul>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Dillon Frolek</p>
+    <footer class="wrap">
+        <div class="footer">
+            <p><span class="footer-name">Dillon Frolek</span> &copy; 2026</p>
+            <a href="#top">Back to top</a>
         </div>
     </footer>
 </body>
